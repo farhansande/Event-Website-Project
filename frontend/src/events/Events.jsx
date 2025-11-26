@@ -62,7 +62,15 @@ export default function Events(){ // Default function means, if no argument is g
                     value = {newEvent.EventTime}
                     onChange={(e) => setNewEvent({...newEvent, EventTime: e.target.value})}
                 />
-    
+
+                <input
+                    type = "text"
+                    placeholder = "EventLocation"
+                    value = {newEvent.EventLocation}
+                    onChange={(e) => setNewEvent({...newEvent, EventLocation: e.target.value})}
+                />
+
+                
             </div>
         </div>
     );
